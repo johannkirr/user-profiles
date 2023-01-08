@@ -5,7 +5,7 @@ import { HomeIcon } from "@heroicons/react/solid"
 
 export default function Header() {
   return (
-  
+    <div className="shadow border-b sticky top-0" style={{backgroundColor: "white", opacity: "0.95"}}>
       <div className="flex items-center justify-between max-w-6xl mx-4 xl:mx-auto">
         <div className="cursor-pointer h-24 w-24 relative hidden lg:inline-grid hover:scale-125 transision-transform duration-200 ease-out">
             <Image src="/../public/bilder/logo.jpg" 
@@ -32,6 +32,7 @@ export default function Header() {
           <Image className="rounded-full cursor-pointer hover:scale-125 transision-transform duration-200 ease-out" src="/../public/bilder/foto.jpg" width={20} height={20} alt="user-image"/>
         </div>
 
+      </div>
       </div>
    
   )
